@@ -17,6 +17,11 @@ def get_candles_off(candles):
 
 if __name__ == "__main__":
     # Entradas: años a cumplir y altura de las velas
-    years = 4
-    candles = [3, 2, 1, 3]
-    print(get_candles_off(candles))
+    candles = []
+    years = int(input("Age "))
+    # El arreglo será la misma cantidad que los años que se cumplan
+    print ("Heights: ")
+    for i in range(0, years):
+        ele = int(input())
+        candles.append(ele)
+    print("Candles off: "+ str(get_candles_off(candles)))
